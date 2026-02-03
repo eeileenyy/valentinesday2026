@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <title>Letters We Caught Along the Way 💌</title>
+ <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ACT 1: Homepage -->
+<div id="home" class="screen active">
+ <h1>Letters We Caught Along the Way 💌</h1>
+ <p>Catch the love letters 💌. Dodge the thunder clouds ⛈️. See what’s waiting at the end.</p>
+ <button id="startBtn">Start 💌</button>
+</div>
+
+<!-- ACT 2: Instructions -->
+<div id="instructions" class="screen">
+ <h2>How to Play</h2>
+ <p>🐈 Move left and right to help the cat</p>
+ <p>💌 Catch love letters — each one is worth 10 points</p>
+ <p>⛈️ Avoid thunder clouds — they take away 5 points</p>
+ <p>Collect <strong>24 love letters</strong> to unlock something special </p>
+ <button id="playBtn">Play 💌</button>
+</div>
+
+<!-- ACT 2/3: Game -->
+<div id="gameScreen" class="screen">
+ <p>Score: <span id="score">0</span></p>
+ <canvas id="gameCanvas" width="400" height="600"></canvas>
+</div>
+
+<!-- ACT 3: Win -->
+<div id="winScreen" class="screen">
+ <h2>Congratulations! 💗</h2>
+ <p>You did it 🐈💌 You've collected 2 years of love letters. Ready to see what's inside?</p>
+ <button id="openEnvelopeBtn">Open it 📬</button>
+</div>
+
+<!-- ACT 4: Envelope + Letter -->
+<div id="letterScreen" class="screen">
+ <div id="envelopeContainer">
+ <span id="envelope" class="bounce">💌</span>
+ <h1 id="openMeText">Open me!!!</h1>
+ </div>
+ <div id="letterContent">
+ <p>To my dearest handsome Bae, Happy Valentine’s Day!</p>
+ <p>I built this little game to show just how much these 2 years mean to me.</p>
+ <p>I’ve always asked you, “How much do you love me?” and you’d stretch your arms wide and say, <em>“I love you THEEEEEESEEEE much!”</em> with your cheeky smile.</p>
+ <p>We’ve come a long way, and no matter what, I’ll always love you THEEEEEESEEEE much too. I’ll love you through the calm and the storm, and I’ll always choose us — every single day.</p>
+ <p>I love you!! ❤️ I still owe you kisses, cuddles, and huggies when I’m back.</p>
+ </div>
+ <button id="replayBtn">Catch again 💘</button>
+ <div id="heartsContainer"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
